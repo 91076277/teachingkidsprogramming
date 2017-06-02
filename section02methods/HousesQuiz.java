@@ -1,5 +1,6 @@
 package org.teachingkidsprogramming.section02methods;
 
+import org.teachingextensions.logo.Tortoise;
 import org.teachingkidsprogramming.recipes.quizzes.graders.HousesQuizAdapter;
 import org.teachingkidsprogramming.recipes.quizzes.graders.HousesQuizGrader;
 
@@ -9,39 +10,64 @@ public class HousesQuiz extends HousesQuizAdapter
   {
     // Question 1 
     //   small (recipe below) 
-    //   ------------- Recipe for small 
-    length = 7;
-    //   ------------- End of small recipe
+    small();
     //
     //   Question2
     //   medium (recipe below) 
-    //   ------------- Recipe for medium 
-    //      set the current length to 21
-    //   ------------- End of medium recipe
+    medium();
     //
     //   Question3
     //   large (recipe below) 
-    //   ------------- Recipe for large 
-    //      set the current length to 63
-    //   ------------- End of large recipe
+    large();
     //
     //   Question4
     //   moveTheLength (recipe below) 
     //   ------------- Recipe for moveTheLength 
-    //      move the Tortoise the current length
-    //   ------------- End of moveTheLength recipe
+    moveTheLength();
     //
     //   Question5
     //   turnTheCorner (recipe below) 
-    //   ------------- Recipe for turnTheCorner 
-    //      turn the Tortoise 1/3 of 360 degrees to the left
-    //   ------------- End of turnTheCorner recipe
     //
     //   Question6
     //   drawASide (recipe below) 
     //   ------------- Recipe for drawASide 
     //      call moveTheLength and turnTheCorner
+    moveTheLength();
+    turnTheCorner();
     //   ------------- End of drawASide recipe
+  }
+  public void turnTheCorner()
+  {
+    //   ------------- Recipe for turnTheCorner 
+    //      turn the Tortoise 1/3 of 360 degrees to the left
+    Tortoise.turn(360 / 3);
+    //   ------------- End of turnTheCorner recipe
+  }
+  public void moveTheLength()
+  {
+    //      move the Tortoise the current length
+    Tortoise.move(length);
+    //   ------------- End of moveTheLength recipe
+  }
+  public void large()
+  {
+    //   ------------- Recipe for large 
+    //      set the current length to 63
+    length = 63;
+    //   ------------- End of large recipe
+  }
+  public void medium()
+  {
+    //   ------------- Recipe for medium 
+    //      set the current length to 21
+    length = 21;
+    //   ------------- End of medium recipe
+  }
+  public void small()
+  {
+    //   ------------- Recipe for small 
+    length = 7;
+    //   ------------- End of small recipe
   }
   public static void main(String[] args)
   {

@@ -9,7 +9,32 @@ public class FizzBuzz
   //
   //    NOTE: this is a kata (higher level instructions)
   //    part of the exercise is to translate into line-by-line English, THEN Java
-  //
-  //    For more complete directions see this page
-  //    https://www.penflip.com/lynnlangit/tkp-lesson-plans/blob/master/course09.txt
+  //if divisible by three, print out 'fizz
+  public static void main(String[] args)
+  {
+    for (int i = 1; i <= 100; i++)
+    {
+      if (i % 3 == 0 && i % 5 == 0 == false)
+      {
+        System.out.println("Fizz");
+      }
+      else if (i % 5 == 0 && i % 3 == 0 == false)
+      {
+        System.out.println("Buzz");
+      }
+      else if (i % 3 == 0 && i % 5 == 0)
+      {
+        System.out.println("FizzBuzz");
+      }
+      else
+      {
+        System.out.println(i);
+      }
+    }
+    // if divisible by five, print oit 'buzz'
+    // if both, 'fizz buzz'
+    //
+    //    For more complete directions see this page
+    //    https://www.penflip.com/lynnlangit/tkp-lesson-plans/blob/master/course09.txt
+  }
 }

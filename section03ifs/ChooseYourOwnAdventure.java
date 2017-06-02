@@ -15,17 +15,17 @@ public class ChooseYourOwnAdventure
   }
   private static void startStory()
   {
-    tellMoreStory("One morning the Tortoise woke up in a dream.");
+    tellMoreStory("One morning you woke up as a tortoise.");
     animateStartStory();
-    String action = askAQuestion("Do you want to 'wake up' or 'explore' the dream?");
-    if ("wake up".equalsIgnoreCase(action))
+    String action = askAQuestion("Do you want to 'scream' in a smol little voice or 'walk' towards help?");
+    if ("scream".equalsIgnoreCase(action))
     {
       //          wakeUp (recipe below) --#2.1
       //          ------------- Recipe for wakeUp --#2.2
       //              Tell the user "You wake up and have a boring day. The end." --#1
       //          ------------- End of wakeUp recipe --#2.3
     }
-    else if ("explore".equalsIgnoreCase(action))
+    else if ("walk".equalsIgnoreCase(action))
     {
       //      approachOoze (recipe below) --#4.1
       //      ------------- Recipe for approachOoze --#4.2
